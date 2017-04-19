@@ -5,6 +5,8 @@ Google机器学习新手教程学习心得与代码
 
 > 视频合集 http://v.youku.com/v_show/id_XMTUxODA1NTY3Mg==.html?f=26979872&from=y1.7-3
 
+> Youtube地址[有中文字幕哦:)]：https://www.youtube.com/watch?v=cKxRvEZd3Mw
+
 最简单权威的机器学习新手教程。
 
 有问题可以到[Issue区](https://github.com/ahangchen/GoogleML/issues)讨论
