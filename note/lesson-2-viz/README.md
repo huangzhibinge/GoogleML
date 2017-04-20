@@ -88,7 +88,7 @@ sudo ldconfig
 ```
 再运行代码即可。
 
-### Windows
+### Windows 下可以参考这个:
 
 教程中的代码采用的是：
 
@@ -119,7 +119,7 @@ sudo ldconfig
     import os     
     os.environ["PATH"] += os.pathsep + 'C:/Program Files (x86)/Graphviz2.38/bin/'
 
-## Code(以Iris为例，导入数据，训练分类器，预测，查看决策树)
+## Code (以Iris为例，导入数据，训练分类器，预测，查看决策树)
     import numpy as np
     import pydot
     import pydotplus
