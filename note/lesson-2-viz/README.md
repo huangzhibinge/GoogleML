@@ -96,7 +96,10 @@ sudo ldconfig
     
 会报 `AttributeError: 'list' object has no attribute 'write_pdf'` 错误
 
-显然`pydot.graph_from_dot_data`返回的是 list (至于为什么教程可以通过我暂时也不知道，如果你知道请一定告诉我)，所以应该用：
+显然`pydot.graph_from_dot_data`返回的是 list (~~至于为什么教程可以通过我暂时也不知道，如果你知道请一定告诉我~~)
+> 感谢@ahangcheng:" 1.2.0 以前的pydot中graph_from_dot_data() 返回单个的对象，1.2.0之后返回list，详见Pydot changelog。
+
+所以 1.2.0 或以上的版本应该用：
 
     graph[0].write_pdf("iris.pdf")
 
