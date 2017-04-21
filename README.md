@@ -16,12 +16,12 @@ Google机器学习新手教程学习心得与代码
 笔记列表
 - Lesson 1 [Hello world(修改版)](note/lesson-1-hello-world/concept.md)
 - Lesson 2 [Visualizing a Decision Tree(修改版)](note/lesson-2-viz/README.md)
-- Lesson 3 [What Makes a Good Feature](note/lesson-3-good-feature/README.md)
+- Lesson 3 [What Makes a Good Feature(修改版)](note/lesson-3-good-feature/README.md)
 - Lesson 4 [Let’s Write a Pipeline](note/lesson4-pipeline/README.md)
 - Lesson 5 [Writing Our First Classifier](note/lesson-5-classifier/README.md)
 - Lesson 6 [Train an Image Classifier with TensorFlow for Poets](note/lesson-6-tf-img.md)
 - Lesson 7 [tf.learn手写文字识别](note/lesson-7-tflearn-mnist.md)
 
-> 如果觉得我的文章对您有帮助，请随意打赏～
+> 如果觉得原作者(ahangcheng)的文章对您有帮助，请随意打赏～
 
 <img src="res/wxmoney.jpg" width = "400" height = "400" alt="图片名称" align=center />

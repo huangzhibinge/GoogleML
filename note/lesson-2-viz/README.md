@@ -1,4 +1,4 @@
-# Visualizing a Decision Tree 
+# Visualizing a Decision Tree
 > Google Machine Learning Recipes 2
 
 ## Why decision Tree
@@ -93,7 +93,7 @@ sudo ldconfig
 教程中的代码采用的是：
 
     graph.write_pdf("iris.pdf")
-    
+
 会报 `AttributeError: 'list' object has no attribute 'write_pdf'` 错误
 
 显然`pydot.graph_from_dot_data`返回的是 list (~~至于为什么教程可以通过我暂时也不知道，如果你知道请一定告诉我~~)
@@ -109,7 +109,7 @@ sudo ldconfig
     ...
     graph = pydotplus.graph_from_dot_data(dot_data.getvalue())
     graph.write_pdf("iris.pdf")
-    
+
 
 如果报了这个错：
 
@@ -119,7 +119,7 @@ sudo ldconfig
 
 如果还报这个错误，请添加以下代码，设置PATH：
 
-    import os     
+    import os
     os.environ["PATH"] += os.pathsep + 'C:/Program Files (x86)/Graphviz2.38/bin/'
 
 ## Code (以Iris为例，导入数据，训练分类器，预测，查看决策树)
@@ -128,11 +128,11 @@ sudo ldconfig
     import pydotplus
     import os
     os.environ["PATH"] += os.pathsep + 'C:/Graphviz2.38/bin/'
-    
+
     from sklearn.datasets import load_iris
     from sklearn import tree
     from sklearn.externals.six import StringIO
-    
+
     iris = load_iris()
     print iris.feature_names
     print iris.target_names
@@ -141,27 +141,27 @@ sudo ldconfig
     # for i in range(len(iris.target)):
     #     print("Example %d : label %s, features %s" %
     #           (i, iris.target[i], iris.data[i]))
-    
+
     test_idx = [0, 50, 100]
-    
+
     # training data
     train_target = np.delete(iris.target, test_idx)
     train_data = np.delete(iris.data, test_idx, axis=0)
-    
+
     # testing data
     test_target = iris.target[test_idx]
     test_data = iris.data[test_idx]
-    
+
     # train
     clf = tree.DecisionTreeClassifier()
     clf.fit(train_data, train_target)
-    
+
     # test
     print test_target
     print clf.predict(test_data)
-    
+
     # visual code
-    
+
     dot_data = StringIO()
     tree.export_graphviz(clf,
                          out_file=dot_data,
@@ -169,12 +169,17 @@ sudo ldconfig
                          class_names=iris.target_names,
                          filled=True, rounded=True,
                          impurity=False)
-    
+
     graph = pydot.graph_from_dot_data(dot_data.getvalue())
     # graph.write_pdf("iris_decision_tree.pdf") # return a list
     graph[0].write_pdf("iris2.pdf")
     # graph = pydotplus.graph_from_dot_data(dot_data.getvalue())
     # graph.write_pdf("iris.pdf")
-    
+
     print test_target
     print test_data
+
+
+> 如果觉得原作者(ahangcheng)的文章对您有帮助，请随意打赏～
+
+<img src="https://github.com/ahangchen/GoogleML/raw/master/res/wxmoney.jpg" width = "400" height = "400" alt="图片名称" align=center />
