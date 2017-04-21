@@ -61,6 +61,6 @@
 
 > matplotlib 默认的 backend 是 agg ,无法渲染图，改为  TKAgg 即可，参考[来源](http://www.jianshu.com/p/3f4b89aaf057)。
 
-> 如果觉得我的文章对您有帮助，请随意打赏～
+> 如果觉得原作者(ahangcheng)的文章对您有帮助，请随意打赏～
 
 <img src="https://github.com/ahangchen/GoogleML/raw/master/res/wxmoney.jpg" width = "400" height = "400" alt="图片名称" align=center />
