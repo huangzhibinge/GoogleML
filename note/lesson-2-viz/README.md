@@ -180,6 +180,6 @@ sudo ldconfig
     print test_data
 
 
-> 如果觉得原作者(ahangcheng)的文章对您有帮助，请随意打赏～
+> 如果觉得原作者(ahangchen)的文章对您有帮助，请随意打赏～
 
 <img src="https://github.com/ahangchen/GoogleML/raw/master/res/wxmoney.jpg" width = "400" height = "400" alt="图片名称" align=center />

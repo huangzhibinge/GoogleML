@@ -22,7 +22,7 @@
 * 以上两点证明了**好的feature能有力地说明两个类别的不同**
 
 
-* 单个 Feature 往往不完美，所以需要多个 Feature 
+* 单个 Feature 往往不完美，所以需要多个 Feature
 * 假如由人来做分类器，会需要什么信息？(找好的 Feature )
 * 对于一个 Feature ，如果不同的 label 中，这个 Feature 的值分布越均匀，则这个 Feature 的分类作用越弱
 
@@ -38,7 +38,7 @@
 
 * Informative (资料丰富)
 * Independent (独立的，英寸和厘米都表示身高，所以只能代表一个 Feature )
-* Simple 
+* Simple
 
 ## Code(构造数据集与绘制柱状图)
 
@@ -48,19 +48,19 @@
     matplotlib.use('TkAgg')
     # to change the matplotlib backend from agg to tkagg : end
     import matplotlib.pyplot as plt
-    
+
     greyhounds = 500
     labs = 500
-    
+
     grey_height = 28 + 4 * np.random.randn(greyhounds)
     lab_height = 24 + 4 * np.random.randn(labs)
-    
-    
+
+
     plt.hist([grey_height, lab_height], stacked=True, color=['r', 'b'])
     plt.show()
 
 > matplotlib 默认的 backend 是 agg ,无法渲染图，改为  TKAgg 即可，参考[来源](http://www.jianshu.com/p/3f4b89aaf057)。
 
-> 如果觉得原作者(ahangcheng)的文章对您有帮助，请随意打赏～
+> 如果觉得原作者(ahangchen)的文章对您有帮助，请随意打赏～
 
 <img src="https://github.com/ahangchen/GoogleML/raw/master/res/wxmoney.jpg" width = "400" height = "400" alt="图片名称" align=center />
